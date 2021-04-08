@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "marvin";
+  src: url("/assets/MarvinVisionsTrial-Variable.ttf") format("truetype"),
+       url("/assets/MarvinVisionsTrial-Variable.woff") format("woff"),
+       url("/assets/MarvinVisionsTrial-Variable.woff2") format("woff2");
+       font-weight: 200;
+}
+
+html{
+  background-color: #f2F2F2;
+}
+
+#container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width:100%;
+}
+
+h1{
+  font-family: marvin;
+  font-size: 2em;
+  font-style: oblique 20deg;
+  text-align: center;
+  width: 100vw;
+}
+
+a{
+  text-decoration: none;
+  text-align: center;
+  width: calc(100vw/3)
+
+}
+
+div{
+  width: 150px;
+  height: 150px;
+  margin: 1rem;
+  text-align: center;
+  transition:all .5s linear;
+  font-family: marvin;
+  font-size: 2em;
+  font-style: oblique 20deg;
+  border: solid;
+  border-width: 2px;
+  border-radius: 10px;
+}
+
+div[data-filter="vowels"]{
+  border-color: #85e093;
+}
+
+div[data-filter="consonants"]{
+  border-color: #2614d9;
+}
+
+a[data-filter="consonants"]:focus ~ div:not([data-filter="consonants"]){
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+
+a[data-filter="vowels"]:focus ~ div:not([data-filter="vowels"]){
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
