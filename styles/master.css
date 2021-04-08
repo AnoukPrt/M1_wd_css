@@ -39,13 +39,14 @@ a{
 }
 
 div{
-  width: 300px;
-  height: 300px;
-  margin: 0rem;
-  padding: 0rem;
+  flex-basis: 300px;
+  flex-grow: 1;
+  min-height: 300px;
+  margin: 1rem;
+  padding: 2rem;
   transition:all .5s linear;
   font-family: "Marvin Visions Variable";
-  font-size: 2em;
+  font-size: 3em;
   border: solid;
   border-width: 3px;
   border-radius: 15px;
@@ -83,6 +84,11 @@ div[data-filter="consonants"]:hover{
 div[data-filter="vowels"]:hover{
   border-color: rgba(231, 159, 83, 1);/* Orange */
   background-color: rgba(231, 159, 83, 0.2);
+}
+
+p{
+  font-weight: 30;
+  font-size: 2rem;
 }
 
 @keyframes typochanges {
