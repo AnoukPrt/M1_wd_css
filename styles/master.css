@@ -8,7 +8,7 @@
 }
 
 html{
-  background-color: #F1F7ED;
+  background-color: #ffffff;
 }
 
 #container{
@@ -47,17 +47,20 @@ div{
   transition:all .5s linear;
   font-family: "Marvin Visions Variable";
   font-size: 3em;
+  border-radius: 10px;
   border: solid;
   border-width: 3px;
-  border-radius: 15px;
-  border-color: rgba(11, 48, 12, 1);
-  background-color: rgba(11, 48, 12, 0.2);
+  border-color: #ffffff;
 }
 
 div[data-filter="vowels"]{
+  background-color: rgba(231, 159, 83, 0.2);
+  color: rgba(231, 159, 83, 1);
 }
 
 div[data-filter="consonants"]{
+  background-color: #EAF2FD;
+  color: #2F80ED;
 }
 
 a[data-filter="consonants"]:focus ~ div:not([data-filter="consonants"]){
@@ -77,8 +80,8 @@ a[data-filter="vowels"]:focus ~ div:not([data-filter="vowels"]){
 }
 
 div[data-filter="consonants"]:hover{
-  border-color:rgba(11, 34, 136, 1);/* Blue */
-  background-color: rgba(11, 34, 136, 0.2);
+  border-color: #2F80ED;
+  background-color: #EAF2FD;
 }
 
 div[data-filter="vowels"]:hover{
@@ -89,6 +92,7 @@ div[data-filter="vowels"]:hover{
 p{
   font-weight: 30;
   font-size: 2rem;
+  color: black;
 }
 
 @keyframes typochanges {
