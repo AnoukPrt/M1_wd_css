@@ -41,7 +41,6 @@ a{
 div{
   flex-basis: 300px;
   flex-grow: 1;
-  min-height: 300px;
   margin: 1rem;
   padding: 2rem;
   transition:all .5s linear;
@@ -111,35 +110,4 @@ p{
   100%{
     font-variation-settings: 'wght' 20, 'slnt' 0;
   }
-}
-
-#progress{
-  position: fixed;
-  z-index: 10;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 10px;
-  transform-origin: 0 50%;
-  transform: scaleX(0);
-  background: blue;
-}
-
-@keyframes progression {
-  0%{
-   transform: scaleX(0);
-  }
-  100%{
-    transform: scaleX(1);
-  }
-}
-
-@scroll-timeline progress-time {
-  time-range: 2s;
-}
-
-#progress{
-  animation-name: progression;
-  animation-timeline: progress-time;
-  animation-duration: 2s;
 }
