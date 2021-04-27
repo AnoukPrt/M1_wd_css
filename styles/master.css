@@ -1,8 +1,10 @@
 @font-face {
-  font-family: "Marvin Visions Variable";
-  src: url("/assets/MarvinVisionsTrial-Variable.ttf") format("truetype"),
+  font-family: "DecovarAlpha";
+  src:
+  url("/assets/MarvinVisionsTrial-Variable.ttf") format("truetype"),
        url("/assets/MarvinVisionsTrial-Variable.woff") format("woff"),
-       url("/assets/MarvinVisionsTrial-Variable.woff2") format("woff2");
+       url("/assets/MarvinVisionsTrial-Variable.woff2") format("woff2"),
+       url("/assets/DecovarAlpha-VF.ttf") format("truetype");
        font-weight: 20 170;
        font-style: oblique 0deg 25deg;
 }
@@ -20,7 +22,7 @@ html{
 }
 
 h1{
-  font-family: "Marvin Visions Variable";
+  font-family: "DecovarAlpha";
   font-size: 3em;
   text-align: center;
   width: 100vw;
@@ -53,7 +55,7 @@ div{
   margin: 1rem;
   padding: 2rem;
   transition:all .5s linear;
-  font-family: "Marvin Visions Variable";
+  font-family: "DecovarAlpha";
   font-size: 3em;
   border-radius: 10px;
   border: solid;
@@ -61,16 +63,17 @@ div{
   border-color: #ffffff;
 }
 
-div[data-filter="vowels"]{
+div[data-filter="femmes"]{
   background-color: rgba(231, 159, 83, 0.2);
   color: rgba(231, 159, 83, 1);
 }
 
-div[data-filter="consonants"]{
+div[data-filter="hommes"]{
   background-color: #EAF2FD;
   color: #2F80ED;
 }
 
+<<<<<<< Updated upstream
 a[data-filter="consonants"]:focus ~ div:not([data-filter="consonants"]){
   width:0;
   height:0;
@@ -89,10 +92,22 @@ a[data-filter="vowels"]:focus ~ div:not([data-filter="vowels"]){
 
 div[data-filter="consonants"]:hover{
   border-color: #2F80ED;
+=======
+a[data-filter="hommes"]:focus ~ div:not([data-filter="hommes"]){
+  display: none;
+}
+
+a[data-filter="femmes"]:focus ~ div:not([data-filter="femmes"]){
+  display: none;
+}
+
+div[data-filter="hommes"]:hover{
+  border-color: #2F80ED; /* bleu */
+>>>>>>> Stashed changes
   background-color: #EAF2FD;
 }
 
-div[data-filter="vowels"]:hover{
+div[data-filter="femmes"]:hover{
   border-color: rgba(231, 159, 83, 1);/* Orange */
   background-color: rgba(231, 159, 83, 0.2);
 }
