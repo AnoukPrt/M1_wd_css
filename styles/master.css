@@ -111,10 +111,23 @@ div[data-filter="femmes"]:hover{
   background-color: rgba(231, 159, 83, 0.2);
 }
 
-p{
+h4{
   font-weight: 30;
   font-size: 2rem;
   color: black;
+}
+
+p {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+ul li{
+  font-family: sans-serif;
+  font-size: 1rem;
+  margin: 5px;
 }
 
 @keyframes typochanges {
