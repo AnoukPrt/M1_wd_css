@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "DecovarAlpha";
+  font-family: "Marvin Visions Variable";
   src:
-  url("/assets/MarvinVisionsTrial-Variable.ttf") format("truetype"),
-       url("/assets/MarvinVisionsTrial-Variable.woff") format("woff"),
-       url("/assets/MarvinVisionsTrial-Variable.woff2") format("woff2"),
-       url("/assets/DecovarAlpha-VF.ttf") format("truetype");
+  url("typo/MarvinVisionsTrial-Variable.ttf") format("truetype"),
+       url("typo/MarvinVisionsTrial-Variable.woff") format("woff"),
+       url("typo/MarvinVisionsTrial-Variable.woff2") format("woff2"),
+       url("typo/DecovarAlpha-VF.ttf") format("truetype");
        font-weight: 20 170;
        font-style: oblique 0deg 25deg;
 }
@@ -22,7 +22,7 @@ html{
 }
 
 h1{
-  font-family: "DecovarAlpha";
+  font-family: "Marvin Visions Variable";
   font-size: 3em;
   text-align: center;
   width: 100vw;
@@ -55,7 +55,7 @@ div{
   margin: 1rem;
   padding: 2rem;
   transition:all .5s linear;
-  font-family: "DecovarAlpha";
+  font-family: "Marvin Visions Variable";
   font-size: 3em;
   border-radius: 10px;
   border: solid;
@@ -73,7 +73,6 @@ div[data-filter="hommes"]{
   color: #2F80ED;
 }
 
-<<<<<<< Updated upstream
 a[data-filter="consonants"]:focus ~ div:not([data-filter="consonants"]){
   width:0;
   height:0;
@@ -92,7 +91,8 @@ a[data-filter="vowels"]:focus ~ div:not([data-filter="vowels"]){
 
 div[data-filter="consonants"]:hover{
   border-color: #2F80ED;
-=======
+}
+
 a[data-filter="hommes"]:focus ~ div:not([data-filter="hommes"]){
   display: none;
 }
@@ -103,7 +103,6 @@ a[data-filter="femmes"]:focus ~ div:not([data-filter="femmes"]){
 
 div[data-filter="hommes"]:hover{
   border-color: #2F80ED; /* bleu */
->>>>>>> Stashed changes
   background-color: #EAF2FD;
 }
 
