@@ -234,14 +234,13 @@ ul li{
 
 /* Pop-up */
 
-.buttonW{
+.button{
   width: 200px;
   margin-top: 15px;
   border: none;
 }
 
-/* Button women orange */
-.buttonW:hover{
+.button:hover{
   opacity: 1;
   color: rgba(231, 159, 83, 1) ;
 }
