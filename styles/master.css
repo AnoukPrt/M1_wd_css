@@ -9,8 +9,51 @@
        font-style: oblique 0deg 25deg;
 }
 
+.hero{
+  height: 70vh;
+}
+
+h5{
+  font-family: "Marvin Visions Variable";
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 300px;
+  animation-name: slidein;
+  animation-duration: 2s;
+  font-weight: 60;
+}
+
+.hero p {
+  text-align: center;
+  margin-top: 45vh;
+  animation-name: updown;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes updown {
+  from{
+  margin-top: 44vh;
+  }
+  to{
+  margin-top: 45vh;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -30%;
+  }
+  to {
+    /* margin-left: 20%; */
+    text-align: center;
+    margin-top: 300px;
+  }
+}
+
 html{
-  background-color: #ffffff;
+  background-color: #F3F2F3;
 }
 
 #container{
@@ -26,26 +69,51 @@ h1{
   font-size: 3em;
   text-align: center;
   width: 100vw;
+  margin: 1rem;
+  color: #342E32;
   animation-name : typochanges;
   animation-duration: 4s;
   animation-iteration-count: infinite;
-  margin: 1rem;
 }
 
 a{
+  display: flex;
   text-decoration: none;
-  text-align: center;
-  width: calc(100vw/3);
-  margin: 0 0 1rem 0;
+  width: calc(100vw/4);
   font-family: sans-serif;
   font-size: 1rem;
-  color: black;
+  color: #342E32;
+  background-color: #F3F2F3;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.1s ease-in-out;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-a:first-of-type:hover{
+a:hover {
+  opacity: 0.5;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+a:active {
+  opacity: 1;
+  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+  inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+a:nth-child(2):hover{
   color: #2F80ED;
 }
-a:nth-of-type(2):hover{
+a:nth-child(2):active{
+  color: #2F80ED;
+}
+
+a:nth-child(3):hover{
+  color: rgba(231, 159, 83, 1);
+}
+a:nth-child(3):active{
   color: rgba(231, 159, 83, 1);
 }
 
@@ -60,16 +128,21 @@ div{
   border-radius: 10px;
   border: solid;
   border-width: 3px;
-  border-color: #ffffff;
+  border-color: #342E32;
+}
+
+h3{
+  text-align: right;
+  font-size: 5rem;
 }
 
 div[data-filter="femmes"]{
-  background-color: rgba(231, 159, 83, 0.2);
+  /* background-color: rgba(231, 159, 83, 0.2); */
   color: rgba(231, 159, 83, 1);
 }
 
 div[data-filter="hommes"]{
-  background-color: #EAF2FD;
+  /* background-color: #EAF2FD; */
   color: #2F80ED;
 }
 
@@ -146,4 +219,99 @@ ul li{
   100%{
     font-variation-settings: 'wght' 20, 'slnt' 0;
   }
+}
+
+/* Pop-up Amma Asante */
+
+.button{
+  width: 200px;
+  margin-top: 15px;
+  border: none;
+}
+
+.button:hover{
+  opacity: 1;
+  color: rgba(231, 159, 83, 1) ;
+}
+
+.button:active{
+  opacity: 1;
+  color: rgba(231, 159, 83, 1) ;
+}
+
+#popup1 .backdrop{
+  margin: 0;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
+}
+.backdrop:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  background: #fff;
+  border-radius: 10px;
+  border: none;
+  width: 30%;
+  margin: 0 auto;
+  transition: all 5s ease-in-out;
+  display: grid;
+  grid-template-columns:2;
+  grid-gap: 10px;
+  grid-auto-rows:2;
+}
+
+.popup h4 {
+  margin-top: 0;
+  color: rgba(231, 159, 83, 1);
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.popup .close {
+  font-weight: bolder;
+  font-size: 2rem;
+  transition: all 100ms;
+  text-decoration: none;
+  color: #342E32;
+  grid-column: 2;
+  grid-row: 1;
+  width: 30px;
+  height: 30px;
+}
+
+.popup .close:hover {
+  color: rgba(231, 159, 83, 1);
+}
+
+.popup .content {
+  overflow: auto;
+  border: none;
+}
+
+.close{
+  border: none;
+}
+
+.content p{
+  line-height: 1.5;
+}
+
+svg{
+  position: absolute;
+  z-index: -2;
+  width: 80vw;
+  opacity: 0.5;
+  top: 5%;
+  left:10%;
 }
