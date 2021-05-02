@@ -6,13 +6,59 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/master.css">
   </head>
+  <section class="hero">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1200 736" style="enable-background:new 0 0 1200 736;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#342E32;stroke-width:5;stroke-miterlimit:10;}
+	.st1{fill:#B51700;}
+	.st2{fill:#342E32;}
+	.st3{font-family:'OpenSans-SemiBold';}
+	.st4{font-size:36px;}
+</style>
+<g id="BACKGROUND">
+</g>
+<g id="TEXT">
+	<g>
+		<g>
+			<polyline class="st0" points="27,499.54 27,691.08 216.92,691.08 			"/>
+			<polyline class="st0" points="216.92,38.06 27,38.06 27,223.3 			"/>
+		</g>
+		<g>
+			<polyline class="st0" points="1179,499.54 1179,691.08 989.08,691.08 			"/>
+			<polyline class="st0" points="989.08,38.06 1179,38.06 1179,223.3 			"/>
+		</g>
+	</g>
+	<circle class="st1" cx="61.65" cy="76.95" r="11.84"/>
+	<text transform="matrix(1 0 0 1 80.0317 90.5679)" class="st2 st3 st4">REC</text>
+	<g>
+		<g>
+			<g>
+				<polyline class="st0" points="378.23,416.61 378.23,490.45 451.45,490.45 				"/>
+				<polyline class="st0" points="451.45,238.69 378.23,238.69 378.23,310.11 				"/>
+			</g>
+			<g>
+				<polyline class="st0" points="822.37,416.61 822.37,490.45 749.15,490.45 				"/>
+				<polyline class="st0" points="749.15,238.69 822.37,238.69 822.37,310.11 				"/>
+			</g>
+		</g>
+		<g>
+			<line class="st0" x1="599.29" y1="346.36" x2="599.29" y2="379.86"/>
+			<line class="st0" x1="616.04" y1="363.11" x2="582.54" y2="363.11"/>
+		</g>
+	</g>
+</g>
+</svg>
+    <h5>Welcome !</h5>
+    <p>⌄ Swipe ⌄</p>
+  </section>
     <section id="container">
       <h1>ABC's of directors</h1>
-    <a href="#" data-filter="hommes" tabindex="-1">Men</a>
-    <a href="#" data-filter="femmes" tabindex="-1">Women</a>
-    <a href="#" data-filer="all" tabindex="-1">All</a>
+    <a href="#container data-filter" data-filter="hommes" tabindex="-1">Men</a>
+    <a href="#container data-filter" data-filter="femmes" tabindex="-1">Women</a>
+    <a href="#container" data-filer="all" tabindex="-1">All</a>
 
-      <div data-filter="femmes">A <h4>Amma Asante</h4>
+      <div data-filter="femmes"><h3>A</h3><h4>Amma Asante</h4>
         <p>Filmography</p>
         <ul>
           <li>A way of life, 2004</li>
@@ -20,8 +66,18 @@
           <li>A united Kingdom, 2016</li>
           <li>Where Hands Touch, 2018</li>
         </ul>
+        <a href="#popup1" class="button">More about her</a>
       </div>
-      <div data-filter="femmes">B <h4>Susanne Bier</h4>
+      <div id="popup1" class="backdrop">
+	<div class="popup">
+		<h4>Amma Asante</h4>
+		<a class="close" href="#container">&times;</a>
+		<div class="content">
+			<p>Amma Asante’s career started when she first attended a performing arts school that allowed her to draft her first sitcom script. Later, she became a child actress and made her first appearances on television in Grange Hill and Desmond's. In her late teens, Asante left acting and worked in screenwriting with a development deal from Chrysalis. She founded a production company, Tantrum Films, where she wrote and produced two series of the BBC Two drama Brothers and Sisters (1998).</p>
+		</div>
+	</div>
+</div>
+      <div data-filter="femmes"><H3>B</H3><h4>Susanne Bier</h4>
         <p>Filmography</p>
         <ul>
           <li>Brothers, 2004</li>
@@ -30,7 +86,7 @@
           <li>A second chance, 2014</li>
         </ul>
       </div>
-      <div data-filter="femmes">C <h4>Niki Caro</h4>
+      <div data-filter="femmes"><h3>C</h3><h4>Niki Caro</h4>
         <p>Filmography</p>
         <ul>
           <li>Whale Rider, 2002</li>
@@ -39,7 +95,7 @@
           <li>Mulan, 2020</li>
         </ul>
       </div>
-      <div data-filter="hommes">D <h4>Brian De Palma</h4>
+      <div data-filter="hommes"><h3>D</h3><h4>Brian De Palma</h4>
         <p>Filmography</p>
         <ul>
           <li>Greetings, 1968</li>
@@ -48,7 +104,7 @@
           <li>Passion, 2012</li>
         </ul>
       </div>
-      <div data-filter="hommes">E <h4>Blake Edwards</h4>
+      <div data-filter="hommes"><h3>E</h3><h4>Blake Edwards</h4>
         <p>Filmography</p>
         <ul>
           <li>Blind Date, 1987</li>
@@ -57,7 +113,7 @@
           <li>Son of the Pink Panther, 1993</li>
         </ul>
       </div>
-      <div data-filter="femmes">F <h4>Anne Fletcher</h4>
+      <div data-filter="femmes"><h3>F</h3><h4>Anne Fletcher</h4>
         <p>Filmography</p>
         <ul>
           <li>Step Up, 2006</li>
@@ -66,7 +122,7 @@
           <li>Dumplin', 2018</li>
         </ul>
       </div>
-      <div data-filter="femmes">G <h4>Greta Gerwig</h4>
+      <div data-filter="femmes"><h3>G</h3><h4>Greta Gerwig</h4>
         <p>Filmography</p>
         <ul>
           <li>Nights and Weekends, 2008</li>
@@ -74,43 +130,174 @@
           <li>Little Women, 2019</li>
         </ul>
       </div>
-      <div data-filter="femmes">H <h4>Catherine Hardwicke</h4>
+      <div data-filter="femmes"><h3>H</h3><h4>Catherine Hardwicke</h4>
+        <p>Filmography</p>
+        <ul>
+          <li>Thirteen, 2003</li>
+          <li>Lords of Dogtown, 2005</li>
+          <li>Twilight, 2008</li>
+          <li>Miss Bala, 2009</li>
+        </ul>
       </div>
-      <div data-filter="hommes">I <h4>James Ivory</h4>
+      <div data-filter="hommes"><h3>I</h3><h4>James Ivory</h4>
+        <p>Filmography</p>
+        <ul>
+          <li>Surviving Picasso, 1996</li>
+          <li>The Golden Bowl, 2000</li>
+          <li>Le Divorce, 2003</li>
+          <li>The White Countess, 2005</li>
+        </ul>
       </div>
-      <div data-filter="hommes">J <h4>Peter Jackson</h4>
+      <div data-filter="hommes"><h3>J</h3><h4>Peter Jackson</h4>
+        <p>Filmography</p>
+        <ul>
+          <li>The Lord of the Rings, 2001-2003</li>
+          <li>King Kong, 2005</li>
+          <li>The Lovely Bones, 2009</li>
+          <li>They Shall Not Grow Old, 2018</li>
+        </ul>
       </div>
-      <div data-filter="femmes">K <h4>Jennifer Kent</h4>
+      <div data-filter="femmes"><h3>K</h3><h4>Jennifer Kent</h4>
+        <p>Filmography</p>
+        <ul>
+          <li>Monstre, 2005</li>
+          <li>Mister Babadook , 2014</li>
+          <li>The Nightingale, 2018</li>
+        </ul>
       </div>
-      <div data-filter="hommes">L <h4>Ang lee</h4>
+      <div data-filter="hommes"><h3>L</h3><h4>Ang lee</h4>
+        <p>Filmography</p>
+        <ul>
+          <li>Hulk, 2003</li>
+          <li>Lust, Caution, 2007</li>
+          <li>Life of Pi, 2012</li>
+          <li>Gemini Man, 2019</li>
+        </ul>
       </div>
-      <div data-filter="hommes">M <h4>Sam Mendes</h4>
+      <div data-filter="hommes"><h3>M</h3><h4>Sam Mendes</h4>
+        <p>Filmography</p>
+        <ul>
+          <li>American Beauty, 1999</li>
+          <li>Jarhead, 2005</li>
+          <li>Skyfall, 2012</li>
+          <li>1917, 2019</li>
+        </ul>
       </div>
-      <div data-filter="hommes">N <h4>Christopher Nolan</h4>
+      <div data-filter="hommes"><h3>N</h3><h4>Christopher Nolan</h4>
+        <p>Filmography</p>
+        <ul>
+          <li>Insomnia, 2002</li>
+          <li>The Dark Knight, 2008</li>
+          <li>Inception, 2010</li>
+          <li>Interstellar, 2014</li>
+        </ul>
       </div>
-      <div data-filter="hommes">O <h4>Kenny Ortega</h4>
+      <div data-filter="hommes"><h>O</h><h4>Kenny Ortega</h4>
+        <p>Filmography</p>
+        <ul>
+          <li>Hocus Pocus, 1993</li>
+          <li>High School Musical 3, 2008</li>
+          <li>Michael Jackson's This Is It, 2009</li>
+          <li>A Change of Heart, 2017</li>
+        </ul>
       </div>
-      <div data-filter="femmes">P <h4>Gina Prince-Bythewood</h4>
+      <div data-filter="femmes"><h3>P</h3><h4>Gina Prince-Bythewood</h4>
+        <p>Filmography</p>
+        <ul>
+          <li>Love & Basketball, 2000</li>
+          <li>The Secret Life of Bees, 2008</li>
+          <li>Beyond the Lights, 2014</li>
+          <li>The Old Guard, 2020</li>
+        </ul>
       </div>
-      <div data-filter="hommes">Q <h4>Brothers Quay</h4>
+      <div data-filter="hommes"><h3>Q</h3><h4>Brothers Quay</h4>
+        <p>Filmography</p>
+        <ul>
+          <li>Institut Benjamenta, 1995</li>
+          <li>The Sandman, 2000</li>
+          <li>L'Accordeur de tremblements de terre, 2006</li>
+          <li>Jack and Diane, 2012</li>
+        </ul>
       </div>
-      <div data-filter="femmes">R <h4>Dee Rees</h4>
+      <div data-filter="femmes"><h3>R</h3><h4>Dee Rees</h4>
+        <p>Filmography</p>
+        <ul>
+          <li>Colonial Gods, 2009</li>
+          <li>Pariah, 2011</li>
+          <li>Mudbound, 2017</li>
+          <li>The Last Thing He Wanted, 2020</li>
+        </ul>
       </div>
-      <div data-filter="femmes">S <h4>Marjane Satrapi</h4>
+      <div data-filter="femmes"><h3>S</h3><h4>Marjane Satrapi</h4>
+        <p>Filmography</p>
+        <ul>
+          <li>Persepolis, 2007</li>
+          <li>Poulet aux prunes, 2011</li>
+          <li>La Bande des Jotas, 2013</li>
+          <li>The Voices, 2014</li>
+        </ul>
       </div>
-      <div data-filter="femmes">T <h4>Julie Taymor</h4>
+      <div data-filter="femmes"><h3>T</h3><h4>Julie Taymor</h4>
+        <p>Filmography</p>
+        <ul>
+          <li>Fool's Fire, 1992</li>
+          <li>Titus, 1999</li>
+          <li>Frida, 2002</li>
+          <li>The Tempest, 2010</li>
+        </ul>
       </div>
-      <div data-filter="hommes">U <h4>Peter Ustinov</h4>
+      <div data-filter="hommes"><h>U</h><h4>Peter Ustinov</h4>
+        <p>Filmography</p>
+        <ul>
+          <li>Billy Budd, 1962</li>
+          <li>Lady L, 1965</li>
+          <li>Hammersmith is Out, 1972</li>
+          <li>Memed, my Hawk , 1984</li>
+        </ul>
       </div>
-      <div data-filter="hommes">V <h4>Gore Verbinski</h4>
+      <div data-filter="hommes"><h3>V</h3><h4>Gore Verbinski</h4>
+        <p>Filmography</p>
+        <ul>
+          <li>The Ring, 2002</li>
+          <li>Pirates of the Caribbean: The Curse of the Black Pearl, 2003</li>
+          <li>Rango, 2011</li>
+          <li>The Lone Ranger, 2013</li>
+        </ul>
       </div>
-      <div data-filter="hommes">W <h4>Taika Waititi</h4>
+      <div data-filter="hommes"><h3>W</h3><h4>Taika Waititi</h4>
+        <p>Filmography</p>
+        <ul>
+          <li>Boy, 2010</li>
+          <li>Thor : Ragnarok, 2017</li>
+          <li>Jojo Rabbit, 2019</li>
+          <li>Next Goal Wins, 2021</li>
+        </ul>
       </div>
-      <div data-filter="hommes">X <h4>Henri Xhonneux</h4>
+      <div data-filter="hommes"><h3>X</h3> <h4>Henri Xhonneux</h4>
+        <p>Filmography</p>
+        <ul>
+          <li>Brigade Anti-Sex , 1970</li>
+          <li>Souvenir of Gibraltar, 1975</li>
+          <li>Marquis, 1989</li>
+          <li>Topor père et fils, 1993</li>
+        </ul>
       </div>
-      <div data-filter="femmes">Y <h4>Jennifer Yuh Nelson</h4>
+      <div data-filter="femmes"><h3>Y</h3> <h4>Jennifer Yuh Nelson</h4>
+        <p>Filmography</p>
+        <ul>
+          <li>Kung Fu Panda 2, 2011</li>
+          <li>Kung Fu Panda 3, 2016</li>
+          <li>The Darkest Minds, 2018</li>
+        </ul>
       </div>
-      <div data-filter="femmes">Z <h4>Chloe Zhao</h4>
+      <div data-filter="femmes"><h3>Z</h3> <h4>Chloe Zhao</h4>
+        <p>Filmography</p>
+        <ul>
+          <li>Les chansons que mes frères m'ont apprises, 2015</li>
+          <li>The Rider, 2017</li>
+          <li>Nomadland, 2020</li>
+          <li>Eternals, 2021</li>
+        </ul>
       </div>
     </section>
 
